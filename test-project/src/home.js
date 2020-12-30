@@ -1,16 +1,21 @@
 import React, { Component } from "react";
- 
+import Figure from 'react-bootstrap/Figure'
+
 class Home extends Component {
   render() {
     return (
-      <div>
-        <h2>HELLO</h2>
-        <p>
-          <img src="./logo.png" alt="Logo not available" />
-        </p>
-      </div>
+      <Figure>
+        <Figure.Image
+          alt="Logo not available"
+          src="./logo.png"
+        />
+        <Figure.Caption>
+          Hello World
+  </Figure.Caption>
+      </Figure>
+
     );
   }
 }
- 
+
 export default Home;

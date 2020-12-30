@@ -64,6 +64,7 @@ class GoogleBtn extends Component {
           buttonText='Logout'
           onLogoutSuccess={ this.logout }
           onFailure={ this.handleLogoutFailure }
+          theme="dark"
         >
         </GoogleLogout>
         :
@@ -75,6 +76,7 @@ class GoogleBtn extends Component {
           cookiePolicy={ 'single_host_origin' }
           responseType='code,token'
           isSignedIn={true}
+          theme="dark"
         />
       }
       { this.state.accessToken ? <h5>You are successfully loggged in.</h5> : null }
