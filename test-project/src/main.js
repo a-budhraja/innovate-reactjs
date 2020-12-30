@@ -8,14 +8,13 @@ import Home from "./home";
 import Login from "./login";
 import Profile from "./profile";
 import Badge from 'react-bootstrap/Badge'
-import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 
 class Main extends Component {
   render() {
     return (
       <HashRouter>
-        <Container>
+        <Container>        
           <div>
             <h1><Badge variant="secondary">React JS Project</Badge></h1>
             <ul className="header">

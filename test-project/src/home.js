@@ -1,19 +1,17 @@
 import React, { Component } from "react";
-import Figure from 'react-bootstrap/Figure'
+import Card from 'react-bootstrap/Card'
 
 class Home extends Component {
   render() {
     return (
-      <Figure>
-        <Figure.Image
-          alt="Logo not available"
-          src="./logo.png"
-        />
-        <Figure.Caption>
-          Hello World
-  </Figure.Caption>
-      </Figure>
-
+      <Card bg={'info'} style={{ width: '15rem' }}>
+        <Card.Img variant="top" src="./logo.png" />
+        <Card.Body>
+          <Card.Text>
+            Hello World
+        </Card.Text>
+        </Card.Body>
+      </Card>
     );
   }
 }
