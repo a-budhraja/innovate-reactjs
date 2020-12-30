@@ -5,7 +5,7 @@ import Badge from 'react-bootstrap/Badge'
 class Login extends Component {
   render() {
     return (
-      <Badge variant="info"><GoogleBtn/></Badge>      
+      <Badge variant="light"><GoogleBtn/></Badge>      
     );
   }
 }
